@@ -1,0 +1,57 @@
+{
+  "name": "llm-json-repair",
+  "version": "0.1.0",
+  "description": "Extract complete JSON objects from partial, streaming or malformed LLM output. String-literal-aware (handles escapes and LaTeX backslashes), with field-level recovery for truncated objects. Zero dependencies.",
+  "keywords": [
+    "llm",
+    "json",
+    "streaming",
+    "parser",
+    "partial-json",
+    "json-repair",
+    "structured-output",
+    "function-calling",
+    "openai",
+    "anthropic",
+    "gemini",
+    "sse",
+    "latex",
+    "ai"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Amos Matzke <amos@am-creativetech.com> (https://quanta-study.de)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ammmcreativetech-dot/llm-json-repair.git"
+  },
+  "homepage": "https://github.com/ammmcreativetech-dot/llm-json-repair#readme",
+  "bugs": {
+    "url": "https://github.com/ammmcreativetech-dot/llm-json-repair/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
