@@ -1,7 +1,7 @@
 /**
  * llm-json-repair
  * ----------------
- * Extract complete JSON objects from partial, streaming or malformed LLM output.
+ * Extract complete valid JSON object slices from streamed or partial text.
  *
  * The scanner is string-literal-aware: it tracks brace depth but ignores `{`/`}`
  * that appear *inside* JSON string literals (honoring `\"` and `\\` escapes), so

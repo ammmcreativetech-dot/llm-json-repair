@@ -1,7 +1,7 @@
 {
   "name": "llm-json-repair",
   "version": "0.1.0",
-  "description": "Extract complete JSON objects from partial, streaming or malformed LLM output. String-literal-aware (handles escapes and LaTeX backslashes), with field-level recovery for truncated objects. Zero dependencies.",
+  "description": "String-aware JSON object extraction and selected field recovery for streamed text. TypeScript utilities maintained by the developer of Quanta Study.",
   "keywords": [
     "llm",
     "json",
@@ -53,5 +53,6 @@
   },
   "devDependencies": {
     "typescript": "^5.7.0"
-  }
+  },
+  "private": true
 }
